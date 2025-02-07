@@ -1,4 +1,3 @@
-# Proyecto-Final-DIW
 [Proyecto Final - Desarrollo de Interfaz Web](https://ciclos.iesruizgijon.es/mod/assign/view.php?id=17918)
 
 ## Opciones de Proyecto
@@ -57,5 +56,4 @@
 | Despliegue y Github          | 0.5    |
 | Presentación                 | 1.0    |
 | **Total**                    | **10** |
-
 
