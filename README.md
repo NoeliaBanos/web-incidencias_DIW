@@ -19,9 +19,6 @@
 ## Requisitos y Pasos para la Realización del Proyecto Final
 
 ### Desarrollo de la arquitectura de información:
-- ❌ Inventario de contenidos
-- ❌ Card sorting
-- ❌ Mapa mental
 - ✅ Wireframe low-fi
 
 ### Elaboración del sistema de diseño:
