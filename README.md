@@ -19,6 +19,7 @@
 ## Requisitos y Pasos para la Realización del Proyecto Final
 
 ### Desarrollo de la arquitectura de información:
+- ✅ ~~Idea inicial~~
 - ✅ Wireframe low-fi
 
 ### Elaboración del sistema de diseño:
