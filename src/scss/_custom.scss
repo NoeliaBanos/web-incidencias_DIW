@@ -1,9 +1,10 @@
 @use 'sass:color';
 // Reescribimos variables de Boostrap
-// #748CAB
+
 $primary: #1D2D44;
 $secondary:#3E5C76;
-$gris: #8c9195;
+$success: #748CAB;
+$gray: #8c9195;
 $dark: #000032;
 
 
@@ -13,15 +14,15 @@ $dark: #000032;
 
 
 // Cards
-$card-border-color:transparent;
+$card-border-color:transboparent;
 
 // Tipografías
 $display-font-weight:900;
 $heading-font-weight:700;
 
 // Nav links
-$nav-link-color:$gris;
-$nav-link-hover-color: color.scale($gris, $lightness: -40%);
+$nav-link-color:$secondary;
+$nav-link-hover-color: color.scale($primary, $lightness: 20%);
 
 
 // importamos Boostrap de node_modules
