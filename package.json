@@ -1,0 +1,24 @@
+{
+  "name": "proyecto_diw",
+  "version": "1.0.0",
+  "description": "Proyecto final de diw",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+        "compilar:sass": "sass --watch src/scss:build/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nissolia/Proyecto-Final-DIW.git"
+  },
+  "author": "Noelia Baños Jiménez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nissolia/Proyecto-Final-DIW/issues"
+  },
+  "homepage": "https://github.com/Nissolia/Proyecto-Final-DIW#readme",
+  "devDependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.85.1"
+  }
+}

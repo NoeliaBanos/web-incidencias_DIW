@@ -1,0 +1,28 @@
+@use 'sass:color';
+// Reescribimos variables de Boostrap
+// #748CAB
+$primary: #1D2D44;
+$secondary:#3E5C76;
+$gris: #8c9195;
+$dark: #000032;
+
+
+// asignar paleta a cambiarlos
+// todos los colores primarios se va a cambiar al nuestro
+
+
+
+// Cards
+$card-border-color:transparent;
+
+// Tipografías
+$display-font-weight:900;
+$heading-font-weight:700;
+
+// Nav links
+$nav-link-color:$gris;
+$nav-link-hover-color: color.scale($gris, $lightness: -40%);
+
+
+// importamos Boostrap de node_modules
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
