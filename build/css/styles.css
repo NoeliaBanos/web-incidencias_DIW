@@ -11853,6 +11853,17 @@ textarea.form-control-lg {
   justify-content: center;
 }
 
+.img-index {
+  margin: 0;
+  transition: transform 0.3s;
+  overflow: hidden;
+  z-index: 0;
+}
+.img-index:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 .logo-nav {
   width: 7rem;
 }
@@ -11869,6 +11880,43 @@ textarea.form-control-lg {
   margin-top: 1.5px;
   clip-path: circle(0% at center);
   transition: clip-path 0.4s cubic-bezier(0.075, 0.082, 0.165, 0.1);
+}
+
+#user-head {
+  animation: animation-head 8s ease-in-out infinite;
+  transform-origin: center; /* Asegura que la cabeza se expanda desde el centro */
+}
+
+#user-shoulder {
+  animation: animation-shoulders 8s ease-in-out infinite;
+  transform-origin: center; /* Asegura que los hombros se expandan desde el centro */
+}
+
+@keyframes animation-head {
+  0% {
+    transform: scale(1); /* Estado inicial */
+  }
+  50% {
+    transform: scale(0.9); /* Reducción máxima de la cabeza */
+  }
+  100% {
+    transform: scale(1); /* Regreso al estado original */
+  }
+}
+@keyframes animation-shoulders {
+  0% {
+    transform: scale(1) translateY(0px); /* Estado inicial, sin movimiento vertical */
+  }
+  50% {
+    transform: scale(1.1) translateY(-10px); /* Expansión y subida de los hombros */
+  }
+  100% {
+    transform: scale(1) translateY(0px); /* Regreso al estado original */
+  }
+}
+.svg-user {
+  border-radius: 100%;
+  width: 30rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
