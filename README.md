@@ -54,4 +54,11 @@
 | Despliegue y Github          | 0.5    |
 | Presentación                 | 1.0    |
 | **Total**                    | **10** |
-
+--
+# Páginas a hacer:
+ - Login
+ - Index para ver las incidencias (?)
+ - Tabla de incidencias - con encargados y el estado
+ - Detalle de incidencia + estado actual
+   - Asunto, detalles, imagen (puede tenerla o no), estado, persona, aula, 
+ - Nueva incidencia y la informacion que va a tener
