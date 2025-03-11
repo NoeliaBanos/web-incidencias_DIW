@@ -15,25 +15,31 @@
 <body>
     <!-- header -->
     <header>
-        <nav class="navbar navbar-expand-lg sticky-top border-bottom border-body">
-            <div class="container d-flex justify-content-space-between">
+        <nav class="navbar navbar-expand-md sticky-top border-bottom border-body">
+            <div class="container">
+                <!-- Logo alineado a la izquierda -->
                 <a class="navbar-brand" href="index.html">
                     <img src="img/logo_RG_480_azul.png" class="logo-nav" alt="Logo ruiz gijón">
                 </a>
 
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav ">
+                <!-- Botón de menú para móviles -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menú de navegación -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto d-md-flex align-items-md-center text-center">
                         <li class="nav-item">
                             <a class="nav-link" href="nueva.html">Nueva incidencia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="usuario.html">Usuario</a>                        </li>
-
+                            <a class="nav-link" href="usuario.html">Usuario</a>
+                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="login.html"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                    height="auto" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-                                </svg></a>
+                            <a class="nav-link" href="login.html">
+                                Login
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -57,16 +63,14 @@
             <!-- Card 1 -->
             <div class="col mb-4">
                 <div class="card border-dark m-3 row">
-                    <div
-                        class="card-header bg-primary text-light d-flex justify-content-between align-items-center mt-3">
+                    <div class="card-header bg-primary text-light d-flex justify-content-between align-items-center mt-3">
                         <h3 class="fw-bold">Incidencia</h3>
                         <div class="d-flex flex-column text-end">
                             <p class="mb-1"><b>Aula: </b>9B</p>
-                            <span class="badge bg-danger mb-2">MUY URGENTE</span>
-                            <!-- Cambia la clase según la urgencia -->
+                            <span class="badge bg-success mb-2">MUY URGENTE</span>
                         </div>
                     </div>
-                    <div class="card-body text-center overflow-hidden rounded">
+                    <div class="card-body text-center overflow-hidden rounded d-flex flex-column justify-content-between align-items-center">
                         <div class="row">
                             <div class="col">
                                 <h5 class="card-title mt-2"><b>Profesor a cargo:</b></h5>
@@ -76,7 +80,6 @@
                                 <h5 class="card-title mt-2"><b>Fecha de creación:</b></h5>
                                 <p class="card-text">4/03/2025</p>
                             </div>
-
                         </div>
                         <div class="row">
                             <div class="col">
@@ -88,31 +91,322 @@
                                 <p class="card-text">10/03/2025</p>
                             </div>
                         </div>
-                        <!-- Botón centrado -->
                         <div class="d-flex justify-content-center my-3">
-                            <a class="btn btn-success text-light w-50" href="detalle.html">Más información</a>
+                            <a class="btn btn-primary text-light" href="detalle.html">Más información</a>
                         </div>
-                        <!-- Imagen al 100% -->
-                        <img src="img/software.png" class="card-img-bottom img-index" alt="Imagen de incidencia">
+                        <img src="img/proyector.jpg" class="card-img-bottom img-index" alt="Imagen de incidencia">
                     </div>
                 </div>
             </div>
-
-            <!-- Card 1 -->
-
-            <!-- Card 1 -->
-
-
-
+        
+            <!-- Card 2 -->
+            <div class="col mb-4">
+                <div class="card border-dark m-3 row">
+                    <div class="card-header bg-secondary text-light d-flex justify-content-between align-items-center mt-3">
+                        <h3 class="fw-bold">Incidencia</h3>
+                        <div class="d-flex flex-column text-end">
+                            <p class="mb-1"><b>Aula: </b>5A</p>
+                            <span class="badge bg-dark mb-2">IMPORTANTE</span>
+                        </div>
+                    </div>
+                    <div class="card-body text-center overflow-hidden rounded d-flex flex-column justify-content-between align-items-center">
+                        <div class="row">
+                            <div class="col">
+                                <h5 class="card-title mt-2"><b>Profesor a cargo:</b></h5>
+                               
+                                <p class="card-text">-</p>
+                            </div>
+                            <div class="col">
+                                <h5 class="card-title mt-2"><b>Fecha de creación:</b></h5>
+                                <p class="card-text">3/03/2025</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h5 class="card-title mt-2"><b>Asunto:</b></h5>
+                                <p class="card-text">El software está desactualizado.</p>
+                            </div>
+                            <div class="col">
+                                <h5 class="card-title mt-2"><b>Fecha de edición:</b></h5>
+                                <p class="card-text">10/03/2025</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center my-3">
+                            <a class="btn btn-secondary text-light" href="detalle.html">Más información</a>
+                        </div>
+                        <img src="img/ordenador.jpg" class="card-img-bottom img-index align-self-end" alt="Imagen de incidencia">
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col mb-4">
+                <div class="card border-dark m-3 row">
+                    <div class="card-header bg-primary text-light d-flex justify-content-between align-items-center mt-3">
+                        <h3 class="fw-bold">Incidencia</h3>
+                        <div class="d-flex flex-column text-end">
+                            <p class="mb-1"><b>Aula: </b>9B</p>
+                            <span class="badge bg-success mb-2">MUY URGENTE</span>
+                        </div>
+                    </div>
+                    <div class="card-body text-center overflow-hidden rounded d-flex flex-column justify-content-between align-items-center">
+                        <div class="row">
+                            <div class="col">
+                                <h5 class="card-title mt-2"><b>Profesor a cargo:</b></h5>
+                                <p class="card-text">-</p>
+                            </div>
+                            <div class="col">
+                                <h5 class="card-title mt-2"><b>Fecha de creación:</b></h5>
+                                <p class="card-text">4/03/2025</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h5 class="card-title mt-2"><b>Asunto:</b></h5>
+                                <p class="card-text">El proyector no funciona.</p>
+                            </div>
+                            <div class="col">
+                                <h5 class="card-title mt-2"><b>Fecha de edición:</b></h5>
+                                <p class="card-text">10/03/2025</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center my-3">
+                            <a class="btn btn-primary text-light" href="detalle.html">Más información</a>
+                        </div>
+                        <img src="img/proyector.jpg" class="card-img-bottom img-index" alt="Imagen de incidencia">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 4 -->
+            <div class="col mb-4">
+                <div class="card border-dark m-3 row">
+                    <div class="card-header bg-secondary text-light d-flex justify-content-between align-items-center mt-3">
+                        <h3 class="fw-bold">Incidencia</h3>
+                        <div class="d-flex flex-column text-end">
+                            <p class="mb-1"><b>Aula: </b>5A</p>
+                            <span class="badge bg-dark mb-2">IMPORTANTE</span>
+                        </div>
+                    </div>
+                    <div class="card-body text-center overflow-hidden rounded d-flex flex-column justify-content-between align-items-center">
+                        <div class="row">
+                            <div class="col">
+                                <h5 class="card-title mt-2"><b>Profesor a cargo:</b></h5>
+                               
+                                <p class="card-text">-</p>
+                            </div>
+                            <div class="col">
+                                <h5 class="card-title mt-2"><b>Fecha de creación:</b></h5>
+                                <p class="card-text">3/03/2025</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h5 class="card-title mt-2"><b>Asunto:</b></h5>
+                                <p class="card-text">El software está desactualizado.</p>
+                            </div>
+                            <div class="col">
+                                <h5 class="card-title mt-2"><b>Fecha de edición:</b></h5>
+                                <p class="card-text">10/03/2025</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center my-3">
+                            <a class="btn btn-secondary text-light" href="detalle.html">Más información</a>
+                        </div>
+                        <img src="img/ordenador.jpg" class="card-img-bottom img-index align-self-end" alt="Imagen de incidencia">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 5 -->
+            <div class="col mb-4">
+                <div class="card border-dark m-3 row">
+                    <div class="card-header bg-primary text-light d-flex justify-content-between align-items-center mt-3">
+                        <h3 class="fw-bold">Incidencia</h3>
+                        <div class="d-flex flex-column text-end">
+                            <p class="mb-1"><b>Aula: </b>9B</p>
+                            <span class="badge bg-success mb-2">MUY URGENTE</span>
+                        </div>
+                    </div>
+                    <div class="card-body text-center overflow-hidden rounded d-flex flex-column justify-content-between align-items-center">
+                        <div class="row">
+                            <div class="col">
+                                <h5 class="card-title mt-2"><b>Profesor a cargo:</b></h5>
+                                <p class="card-text">-</p>
+                            </div>
+                            <div class="col">
+                                <h5 class="card-title mt-2"><b>Fecha de creación:</b></h5>
+                                <p class="card-text">4/03/2025</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h5 class="card-title mt-2"><b>Asunto:</b></h5>
+                                <p class="card-text">El proyector no funciona.</p>
+                            </div>
+                            <div class="col">
+                                <h5 class="card-title mt-2"><b>Fecha de edición:</b></h5>
+                                <p class="card-text">10/03/2025</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center my-3">
+                            <a class="btn btn-primary text-light" href="detalle.html">Más información</a>
+                        </div>
+                        <img src="img/proyector.jpg" class="card-img-bottom img-index" alt="Imagen de incidencia">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 6 -->
+            <div class="col mb-4">
+                <div class="card border-dark m-3 row">
+                    <div class="card-header bg-secondary text-light d-flex justify-content-between align-items-center mt-3">
+                        <h3 class="fw-bold">Incidencia</h3>
+                        <div class="d-flex flex-column text-end">
+                            <p class="mb-1"><b>Aula: </b>5A</p>
+                            <span class="badge bg-dark mb-2">IMPORTANTE</span>
+                        </div>
+                    </div>
+                    <div class="card-body text-center overflow-hidden rounded d-flex flex-column justify-content-between align-items-center">
+                        <div class="row">
+                            <div class="col">
+                                <h5 class="card-title mt-2"><b>Profesor a cargo:</b></h5>
+                               
+                                <p class="card-text">-</p>
+                            </div>
+                            <div class="col">
+                                <h5 class="card-title mt-2"><b>Fecha de creación:</b></h5>
+                                <p class="card-text">3/03/2025</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h5 class="card-title mt-2"><b>Asunto:</b></h5>
+                                <p class="card-text">El software está desactualizado.</p>
+                            </div>
+                            <div class="col">
+                                <h5 class="card-title mt-2"><b>Fecha de edición:</b></h5>
+                                <p class="card-text">10/03/2025</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center my-3">
+                            <a class="btn btn-secondary text-light" href="detalle.html">Más información</a>
+                        </div>
+                        <img src="img/ordenador.jpg" class="card-img-bottom img-index align-self-end" alt="Imagen de incidencia">
+                    </div>
+                </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="col mb-4">
+                <div class="card border-dark m-3 row">
+                    <div class="card-header bg-primary text-light d-flex justify-content-between align-items-center mt-3">
+                        <h3 class="fw-bold">Incidencia</h3>
+                        <div class="d-flex flex-column text-end">
+                            <p class="mb-1"><b>Aula: </b>9B</p>
+                            <span class="badge bg-success mb-2">MUY URGENTE</span>
+                        </div>
+                    </div>
+                    <div class="card-body text-center overflow-hidden rounded d-flex flex-column justify-content-between align-items-center">
+                        <div class="row">
+                            <div class="col">
+                                <h5 class="card-title mt-2"><b>Profesor a cargo:</b></h5>
+                                <p class="card-text">-</p>
+                            </div>
+                            <div class="col">
+                                <h5 class="card-title mt-2"><b>Fecha de creación:</b></h5>
+                                <p class="card-text">4/03/2025</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h5 class="card-title mt-2"><b>Asunto:</b></h5>
+                                <p class="card-text">El proyector no funciona.</p>
+                            </div>
+                            <div class="col">
+                                <h5 class="card-title mt-2"><b>Fecha de edición:</b></h5>
+                                <p class="card-text">10/03/2025</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center my-3">
+                            <a class="btn btn-primary text-light" href="detalle.html">Más información</a>
+                        </div>
+                        <img src="img/proyector.jpg" class="card-img-bottom img-index" alt="Imagen de incidencia">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 8 -->
+            <div class="col mb-4">
+                <div class="card border-dark m-3 row">
+                    <div class="card-header bg-secondary text-light d-flex justify-content-between align-items-center mt-3">
+                        <h3 class="fw-bold">Incidencia</h3>
+                        <div class="d-flex flex-column text-end">
+                            <p class="mb-1"><b>Aula: </b>5A</p>
+                            <span class="badge bg-dark mb-2">IMPORTANTE</span>
+                        </div>
+                    </div>
+                    <div class="card-body text-center overflow-hidden rounded d-flex flex-column justify-content-between align-items-center">
+                        <div class="row">
+                            <div class="col">
+                                <h5 class="card-title mt-2"><b>Profesor a cargo:</b></h5>
+                               
+                                <p class="card-text">-</p>
+                            </div>
+                            <div class="col">
+                                <h5 class="card-title mt-2"><b>Fecha de creación:</b></h5>
+                                <p class="card-text">3/03/2025</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h5 class="card-title mt-2"><b>Asunto:</b></h5>
+                                <p class="card-text">El software está desactualizado.</p>
+                            </div>
+                            <div class="col">
+                                <h5 class="card-title mt-2"><b>Fecha de edición:</b></h5>
+                                <p class="card-text">10/03/2025</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center my-3">
+                            <a class="btn btn-secondary text-light" href="detalle.html">Más información</a>
+                        </div>
+                        <img src="img/ordenador.jpg" class="card-img-bottom img-index align-self-end" alt="Imagen de incidencia">
+                    </div>
+                </div>
+            </div>
+        
+            
+        
+           
+        
         </div>
+        
+
     </div>
 
 
     <!-- footer -->
-    <footer class="bg-primary mb-0">
-        <p class="container text-light text-center p-5 fs-4"> <a class="text-light text-decoration-none"
-                href="https://github.com/Nissolia" target="_blank">Noelia Baños</a>
-            &copy; 2025</p>
+    <footer class="footer bg-dark mt-5 pt-4 pb-2 text-white">
+
+        <div class="d-flex justify-content-center">
+
+
+            <ul class="navbar-nav  text-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="nueva.html">Nueva incidencia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="usuario.html">Usuario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Inicio de sesión</a>
+                </li>
+                <p class="container text-secondary p-3"> <a class="text-secondary text-decoration-none"
+                        href="https://github.com/Nissolia" target="_blank">Noelia Baños</a>
+                    &copy; 2025</p>
+        </div>
+
+
+        </ul>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="js/bootstrap.bundle.js"></script>

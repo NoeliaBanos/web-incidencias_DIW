@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>IES Ruiz incidencias</title>
+    <title>IES Ruiz Detalle</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -15,123 +15,137 @@
 <body>
     <!-- header -->
     <header>
-        <nav class="navbar navbar-expand-lg sticky-top border-bottom border-body">
-            <div class="container d-flex justify-content-space-between">
+        <nav class="navbar navbar-expand-md sticky-top border-bottom border-body">
+            <div class="container">
+                <!-- Logo alineado a la izquierda -->
                 <a class="navbar-brand" href="index.html">
                     <img src="img/logo_RG_480_azul.png" class="logo-nav" alt="Logo ruiz gijón">
                 </a>
-
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav ">
+    
+                <!-- Botón de menú para móviles -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- Menú de navegación -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto d-md-flex align-items-md-center text-center">
                         <li class="nav-item">
                             <a class="nav-link" href="nueva.html">Nueva incidencia</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="usuario.html">Usuario</a>
                         </li>
-
                         <li class="nav-item">
-                            <a class="nav-link" href="login.html"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                    height="auto" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-                                </svg></a>
+                            <a class="nav-link" href="login.html">
+                               Login
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <!-- contenido -->
-    <div class="container mt-3">
-        <div class="row">
-            <div class="col text-center">
+     <!-- contenido -->
+     <div class="container mt-4">
+        <!-- Asunto -->
+        <div class="row mb-3">
+            <div class="col-12 text-center">
                 <h3 class="card-title mb-3"><b>Asunto:</b></h3>
                 <p class="card-text">El proyector no funciona.</p>
             </div>
         </div>
-        <div class="row">
-            <h4 class="bg-danger rounded p-3 mt-3 text-light text-center">MUY URGENTE</h4>
-        </div>
+        
+        <!-- Urgencia -->
         <div class="row mb-3">
-            <div class="col p-3 text-center">
-                <h5 class="card-title"><b>Fecha de creación:</b></h5>
-                <p class="card-text">04/03/2025</p>
-            </div>
-            <div class="col p-3 text-center">
-                <h5 class="card-title"><b>Fecha de edición:</b></h5>
-                <p class="card-text">10/03/2025</p>
+            <div class="col-12 text-center">
+                <h4 class="bg-danger text-white rounded p-3">MUY URGENTE</h4>
             </div>
         </div>
-        <div class="row">
-            <div class="col text-center">
+        
+        <!-- Aula y Profesor -->
+        <div class="row mb-3">
+            <div class="col-12 col-md-6 text-center">
                 <h5><b>Aula:</b> 9B</h5>
             </div>
-            <div class="col text-center">
+            <div class="col-12 col-md-6 text-center">
                 <h5 class="card-title"><b>Profesor a cargo:</b></h5>
                 <p class="card-text">-</p>
             </div>
-
-
         </div>
-
-      
-        <div class="row">
-            <div class="col">
-                <div class="img-detalle"></div>
+    
+        <!-- Imagen de detalle y descripción -->
+        <div class="row mb-3">
+            <div class="col-12 col-md-6">
+                <div class="img-detalle bg-secondary" >
+                    <!-- Imagen de detalle aquí -->
+                </div>
             </div>
-            <div class="col d-flex flex-column justify-content-evenly">
-<div>
-
-    <h3 class="text-center mt-3 mb-3 fw-bold">Descripción de lo sucedido</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae facere velit consequatur optio
-        tempora non perferendis reprehenderit quia expedita aliquam itaque nihil quae reiciendis maiores
-        repudiandae, amet similique consequuntur accusamus!</p>
-    </div>
-    <div>
-        
-        <h2 class="text-center mt-3 mb-3 fw-bold">Estado de la incidencia</h2>
-        
-        <select name="tipo" id="estado" class="form-select text-light text-center" onchange="cambiarColor()">
-            <option value="FINALIZADO">FINALIZADO</option>
-            <option value="EN PROCESO">EN PROCESO</option>
-            <option value="SIN EMPEZAR">SIN EMPEZAR</option>
-        </select>
-    </div>
-</div>    
-
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-between">
+                <!-- Descripción -->
+                <div class="p-2">
+                    <h3 class="text-center mt-3 mb-3 fw-bold">Descripción de lo sucedido</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae facere velit consequatur optio
+                        tempora non perferendis reprehenderit quia expedita aliquam itaque nihil quae reiciendis maiores
+                        repudiandae, amet similique consequuntur accusamus!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae facere velit consequatur optio
+                        tempora non perferendis reprehenderit quia expedita aliquam itaque nihil quae reiciendis maiores
+                        repudiandae, amet similique consequuntur accusamus!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae facere velit consequatur optio
+                        tempora non perferendis reprehenderit quia expedita aliquam itaque nihil quae reiciendis maiores
+                        repudiandae, amet similique consequuntur accusamus!</p>
+                </div>
+    
+                <!-- Fechas -->
+                <div class="row mb-3">
+                    <div class="col-12 col-md-6 text-center">
+                        <h5 class="card-title"><b>Fecha de creación:</b></h5>
+                        <p class="card-text">04/03/2025</p>
+                    </div>
+                    <div class="col-12 col-md-6 text-center">
+                        <h5 class="card-title"><b>Fecha de edición:</b></h5>
+                        <p class="card-text">10/03/2025</p>
+                    </div>
+                </div>
+    
+                <!-- Estado de la incidencia -->
+                <div>
+                    <h2 class="text-center mt-3 mb-3 fw-bold">Estado de la incidencia</h2>
+                    <select id="estado" class="form-select text-center text-light" onchange="cambiarColor()">
+                        <option value="FINALIZADO">FINALIZADO</option>
+                        <option value="EN PROCESO">EN PROCESO</option>
+                        <option value="SIN EMPEZAR">SIN EMPEZAR</option>
+                    </select>
+                </div>
+            </div>
         </div>
-        <!-- footer -->
-        <footer class="bg-primary">
+    </div>
+    
 
-            <p class="container text-light text-center p-5 fs-4"> <a class="text-light text-decoration-none"
-                    href="https://github.com/Nissolia" target="_blank">Noelia Baños</a>
-                &copy; 2025</p>
-        </footer>
+    <!-- footer -->
+    <footer class="footer bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <ul class="navbar-nav justify-content-center mb-3">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="nueva.html">Nueva incidencia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="usuario.html">Usuario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="login.html">Inicio de sesión</a>
+                </li>
+            </ul>
+            <p class="text-secondary">
+                <a class="text-secondary text-decoration-none" href="https://github.com/Nissolia" target="_blank">Noelia Baños</a> &copy; 2025
+            </p>
+        </div>
+    </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script src="js/bootstrap.bundle.js"></script>
-        <script src="js/usuario.js"></script>
+        <script src="js/funciones.js"></script>
 
-        <script>
-            function cambiarColor() {
-                const select = document.getElementById("estado");
-                const valor = select.value;
-
-                // Remueve todas las clases previas
-                select.classList.remove("bg-success", "bg-secondary", "bg-primary");
-
-                // Aplica la clase según el valor seleccionado
-                if (valor === "FINALIZADO") {
-                    select.classList.add("bg-success");
-                } else if (valor === "EN PROCESO") {
-                    select.classList.add("bg-secondary");
-                } else if (valor === "SIN EMPEZAR") {
-                    select.classList.add("bg-primary");
-                }
-            }
-
-            // Llama a la función al cargar la página para establecer el color inicial
-            document.addEventListener("DOMContentLoaded", cambiarColor);
-        </script>
+      
 </body>
 
 </html>

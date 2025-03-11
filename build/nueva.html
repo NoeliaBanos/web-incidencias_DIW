@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>IES Ruiz incidencias</title>
+    <title>IES Ruiz Nueva incidencia</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -15,45 +15,150 @@
 <body>
     <!-- header -->
     <header>
-        <nav class="navbar navbar-expand-lg sticky-top border-bottom border-body">
-            <div class="container d-flex justify-content-space-between">
+        <nav class="navbar navbar-expand-md sticky-top border-bottom border-body">
+            <div class="container">
+                <!-- Logo alineado a la izquierda -->
                 <a class="navbar-brand" href="index.html">
                     <img src="img/logo_RG_480_azul.png" class="logo-nav" alt="Logo ruiz gijón">
                 </a>
 
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav ">
+                <!-- Botón de menú para móviles -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menú de navegación -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto d-md-flex align-items-md-center text-center">
                         <li class="nav-item">
                             <a class="nav-link" href="nueva.html">Nueva incidencia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="usuario.html">Usuario</a>                        </li>
-
+                            <a class="nav-link" href="usuario.html">Usuario</a>
+                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="login.html"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                    height="auto" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-                                </svg></a>
+                            <a class="nav-link" href="login.html">
+                                Login
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main class="pt-2">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, cumque cupiditate ipsum quidem ducimus quia
-        distinctio dolore non itaque delectus.
-    </main>
-    <!-- footer -->
-    <footer class="bg-primary">
 
-        <p class="container text-light text-center p-5 fs-4"> <a  class="text-light text-decoration-none" href="https://github.com/Nissolia" target="_blank">Noelia Baños</a>
-            &copy; 2025</p>
+    <!-- Formulario -->
+    <div class="container my-5">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos sed rerum non culpa magni, expedita illum!
+            Assumenda reprehenderit saepe adipisci, veniam blanditiis amet ipsa sequi, eos tempora eum ducimus dicta
+            molestiae mollitia labore incidunt. Quod, minima quibusdam quos ea molestiae voluptatem aperiam autem vel
+            fugiat at repellendus voluptatum aut modi.</p>
+        <h2 class="text-center mt-5 mb-3 fw-bold">Nueva incidencia</h2>
+        <form class="needs-validation" novalidate>
+            <div class="row">
+                <!-- Asunto (una sola columna) -->
+                <div class="col-md-6 col-12 mb-3 form-floating">
+                    <input type="text" class="form-control" id="asunto" placeholder="Asunto de la incidencia" required>
+                    <label class="ps-4" for="asunto">Asunto</label>
+                    <div class="invalid-feedback">Por favor, introduce un asunto.</div>
+                </div>
+
+
+                <div class="col-md-6 col-12 mb-3 form-floating">
+                    <textarea class="form-control" id="descripcion" placeholder="Descripción detallada"
+                        required></textarea>
+                    <label class="ps-4" for="descripcion">Descripción</label>
+                    <div class="invalid-feedback">Por favor, proporciona una descripción.</div>
+                </div>
+
+                <!-- Campos en dos columnas -->
+                <div class="col-md-6 col-12 mb-3 form-floating">
+                    <input type="text" class="form-control" id="aula" placeholder="Aula" required>
+                    <label class="ps-4" for="aula">Aula</label>
+                    <div class="invalid-feedback">Por favor, indica el aula.</div>
+                </div>
+
+                <div class="col-md-6 col-12 mb-3 form-floating">
+                    <input type="text" class="form-control" id="profesor" placeholder="Profesor a cargo" required>
+                    <label class="ps-4" for="profesor">Profesor a cargo</label>
+                    <div class="invalid-feedback">Este campo es obligatorio.</div>
+                </div>
+
+                <!-- Nivel de Importancia (Una sola columna) -->
+                <div class="col-12 mb-3 form-floating">
+                    <select class="form-select" id="importancia" required>
+                        <option value="">Seleccione un nivel</option>
+                        <option value="MUY_IMPORTANTE" class="bg-danger text-light">Muy Importante</option>
+                        <option value="IMPORTANTE" class="bg-warning text-dark">Importante</option>
+                        <option value="MEDIA" class="bg-info text-dark">Media</option>
+                        <option value="POCO_IMPORTANTE" class="bg-success ">Poco Importante</option>
+                        <option value="SIN_PRIORIDAD" class="bg-secondary text-light">Sin Prioridad</option>
+                    </select>
+                    <label class="ps-4" for="importancia">Nivel de Importancia</label>
+                    <div class="invalid-feedback">Seleccione un nivel de importancia.</div>
+                </div>
+
+                <!-- Subir Imagen (Una sola columna) -->
+                <div class="col-12 mb-3 form-floating">
+                    <input type="file" class="form-control" id="imagen" accept=".jpg, .jpeg, .png" required>
+                    <label class="ps-4" for="imagen">Subir Imagen</label>
+                    <div class="invalid-feedback">Por favor, sube una imagen válida (.jpg, .jpeg, .png) de máximo 5MB.
+                    </div>
+                </div>
+
+                <!-- Botón de Envío (Ocupa toda la fila) -->
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary w-100">Enviar Incidencia</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- footer -->
+    <footer class="footer bg-dark mt-5 pt-4 pb-2 text-white">
+
+        <div class="d-flex justify-content-center">
+
+
+            <ul class="navbar-nav  text-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="nueva.html">Nueva incidencia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="usuario.html">Usuario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Inicio de sesión</a>
+                </li>
+                <p class="container text-secondary p-3"> <a class="text-secondary text-decoration-none"
+                        href="https://github.com/Nissolia" target="_blank">Noelia Baños</a>
+                    &copy; 2025</p>
+        </div>
+
+
+        </ul>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/usuario.js"></script>
+    <script src="js/funciones.js"></script>
+    <script> function cambiarColor() {
+            const select = document.getElementById("estado");
+            const valor = select.value;
 
+            // Remueve todas las clases previas
+            select.classList.remove("bg-success", "bg-secondary", "bg-primary");
+
+            // Aplica la clase según el valor seleccionado
+            if (valor === "FINALIZADO") {
+                select.classList.add("bg-success");
+            } else if (valor === "EN PROCESO") {
+                select.classList.add("bg-secondary");
+            } else if (valor === "SIN EMPEZAR") {
+                select.classList.add("bg-primary");
+            }
+        }
+
+        // Llama a la función al cargar la página para establecer el color inicial
+        document.addEventListener("DOMContentLoaded", cambiarColor);</script>
 </body>
 
 </html>
