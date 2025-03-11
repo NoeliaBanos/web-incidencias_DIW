@@ -1,0 +1,13 @@
+.categoria {
+    background-size: cover;
+    display: flex;
+    height: 80vh;
+
+    &-soft {
+        background: url("../img/software.png") no-repeat center center;
+    }
+
+    &-hard {
+        background: url("../img/informatica.jpg") no-repeat center center;
+    }
+}

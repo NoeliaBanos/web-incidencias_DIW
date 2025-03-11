@@ -11854,14 +11854,35 @@ textarea.form-control-lg {
 }
 
 .img-index {
+  width: 100%;
   margin: 0;
+  transform: scale(1.1);
   transition: transform 0.3s;
   overflow: hidden;
-  z-index: 0;
+  transform-origin: top;
 }
 .img-index:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   cursor: pointer;
+}
+
+.header {
+  background: url("../img/software.png") no-repeat center center;
+  background-size: cover;
+  height: 50vh;
+  text-shadow: 2px 2px 5px #000032;
+}
+
+.categoria {
+  background-size: cover;
+  display: flex;
+  height: 80vh;
+}
+.categoria-soft {
+  background: url("../img/software.png") no-repeat center center;
+}
+.categoria-hard {
+  background: url("../img/informatica.jpg") no-repeat center center;
 }
 
 .logo-nav {
