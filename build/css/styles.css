@@ -11853,6 +11853,13 @@ textarea.form-control-lg {
   justify-content: center;
 }
 
+.img-detalle {
+  background: url("../img/informatica.jpg") no-repeat center center;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+}
+
 .img-index {
   width: 100%;
   margin: 0;

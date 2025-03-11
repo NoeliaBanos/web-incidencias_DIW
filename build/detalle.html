@@ -42,49 +42,96 @@
         </nav>
     </header>
     <!-- contenido -->
-    <div class="container">
+    <div class="container mt-3">
         <div class="row">
-            <div class="col">
-                <h2>Aula:9B</h2>
-            </div>
-            <div class="col">
-                <h5 class="card-title"><b>Fecha de edición:</b></h5>
-                <p class="card-text">10/03/2025.</p>
-            </div>
-            <div class="col">
-                <h5 class="card-title"><b>Asunto:</b></h5>
+            <div class="col text-center">
+                <h3 class="card-title mb-3"><b>Asunto:</b></h3>
                 <p class="card-text">El proyector no funciona.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col">
-                <h3>Imagen del fallo</h3>
-                <img src="img/informatica.jpg" class="img-fluid" alt="...">
+            <h4 class="bg-danger rounded p-3 mt-3 text-light text-center">MUY URGENTE</h4>
+        </div>
+        <div class="row mb-3">
+            <div class="col p-3 text-center">
+                <h5 class="card-title"><b>Fecha de creación:</b></h5>
+                <p class="card-text">04/03/2025</p>
             </div>
-            <div class="col">
-                <h3>Descripción de lo sucedido</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae facere velit consequatur optio
-                    tempora non perferendis reprehenderit quia expedita aliquam itaque nihil quae reiciendis maiores
-                    repudiandae, amet similique consequuntur accusamus!</p>
-                <h2>Estado de la incidencia</h2>
-                <p class="bg-success p-2 text-light text-center rounded">FINALIZADO</p>
-                <p class="bg-secondary p-2 text-light text-center rounded">EN PROCESO</p>
-                <p class="bg-primary p-2 text-light text-center rounded">SIN EMPEZAR</p>
+            <div class="col p-3 text-center">
+                <h5 class="card-title"><b>Fecha de edición:</b></h5>
+                <p class="card-text">10/03/2025</p>
             </div>
         </div>
+        <div class="row">
+            <div class="col text-center">
+                <h5><b>Aula:</b> 9B</h5>
+            </div>
+            <div class="col text-center">
+                <h5 class="card-title"><b>Profesor a cargo:</b></h5>
+                <p class="card-text">-</p>
+            </div>
 
+
+        </div>
+
+      
+        <div class="row">
+            <div class="col">
+                <div class="img-detalle"></div>
+            </div>
+            <div class="col d-flex flex-column justify-content-evenly">
+<div>
+
+    <h3 class="text-center mt-3 mb-3 fw-bold">Descripción de lo sucedido</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae facere velit consequatur optio
+        tempora non perferendis reprehenderit quia expedita aliquam itaque nihil quae reiciendis maiores
+        repudiandae, amet similique consequuntur accusamus!</p>
     </div>
-    <!-- footer -->
-    <footer class="bg-primary">
+    <div>
+        
+        <h2 class="text-center mt-3 mb-3 fw-bold">Estado de la incidencia</h2>
+        
+        <select name="tipo" id="estado" class="form-select text-light text-center" onchange="cambiarColor()">
+            <option value="FINALIZADO">FINALIZADO</option>
+            <option value="EN PROCESO">EN PROCESO</option>
+            <option value="SIN EMPEZAR">SIN EMPEZAR</option>
+        </select>
+    </div>
+</div>    
 
-        <p class="container text-light text-center p-5 fs-4"> <a class="text-light text-decoration-none"
-                href="https://github.com/Nissolia" target="_blank">Noelia Baños</a>
-            &copy; 2025</p>
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/usuario.js"></script>
+        </div>
+        <!-- footer -->
+        <footer class="bg-primary">
 
+            <p class="container text-light text-center p-5 fs-4"> <a class="text-light text-decoration-none"
+                    href="https://github.com/Nissolia" target="_blank">Noelia Baños</a>
+                &copy; 2025</p>
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/usuario.js"></script>
+
+        <script>
+            function cambiarColor() {
+                const select = document.getElementById("estado");
+                const valor = select.value;
+
+                // Remueve todas las clases previas
+                select.classList.remove("bg-success", "bg-secondary", "bg-primary");
+
+                // Aplica la clase según el valor seleccionado
+                if (valor === "FINALIZADO") {
+                    select.classList.add("bg-success");
+                } else if (valor === "EN PROCESO") {
+                    select.classList.add("bg-secondary");
+                } else if (valor === "SIN EMPEZAR") {
+                    select.classList.add("bg-primary");
+                }
+            }
+
+            // Llama a la función al cargar la página para establecer el color inicial
+            document.addEventListener("DOMContentLoaded", cambiarColor);
+        </script>
 </body>
 
 </html>
