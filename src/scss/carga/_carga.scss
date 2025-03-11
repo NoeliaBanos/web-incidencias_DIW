@@ -1,0 +1,17 @@
+@keyframes loading {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .carga {
+    border: 6px dotted white;
+    border-radius: 100%;
+    width: 20rem;
+    height: 20rem;
+    animation: loading 10s infinite linear;
+  }

@@ -11880,18 +11880,6 @@ textarea.form-control-lg {
   text-shadow: 2px 2px 5px #000032;
 }
 
-.categoria {
-  background-size: cover;
-  display: flex;
-  height: 80vh;
-}
-.categoria-soft {
-  background: url("../img/software.png") no-repeat center center;
-}
-.categoria-hard {
-  background: url("../img/informatica.jpg") no-repeat center center;
-}
-
 .logo-nav {
   width: 7rem;
 }
@@ -11944,7 +11932,23 @@ textarea.form-control-lg {
 }
 .svg-user {
   border-radius: 100%;
-  width: 30rem;
+  width: 20%;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.carga {
+  border: 6px dotted white;
+  border-radius: 100%;
+  width: 20rem;
+  height: 20rem;
+  animation: loading 10s infinite linear;
 }
 
 /*# sourceMappingURL=styles.css.map */
