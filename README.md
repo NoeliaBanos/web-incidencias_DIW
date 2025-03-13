@@ -1,5 +1,3 @@
-[Proyecto Final - Desarrollo de Interfaz Web](https://ciclos.iesruizgijon.es/mod/assign/view.php?id=17918)
-
 ## Opciones de Proyecto
 
 1. **Aplicación web gestor de incidencias informáticas de un centro educativo**
