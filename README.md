@@ -1,18 +1,9 @@
-## Opciones de Proyecto
+## Opción seleccionada
 
-1. **Aplicación web gestor de incidencias informáticas de un centro educativo**
+**Aplicación web gestor de incidencias informáticas de un centro educativo**
    - Aula
    - Tipo de incidencia
    - Detalles de la incidencia
-
-2. **Aplicación web seguimiento liga de fútbol del instituto**
-   - Administrador
-   - Gestión de equipos y jugadores
-   - Solo la parte de interfaz
-
-3. **Aplicación web seguimiento laboral antiguo alumnado del Ciclo**
-   - Administradores
-   - Registro y gestión de alumnos
 
 ## Requisitos y Pasos para la Realización del Proyecto Final
 
