@@ -17,11 +17,10 @@
 - ✅ Librería de componentes
 
 ### Creación de prototipos
-- ✅ Uso de Figma o software similar
+- ✅ Uso de [Figma](https://www.figma.com/design/bBXIClQuORXMFcTAJ2nmEW/diw---final?node-id=0-1&t=U4pRvPWLbgjSgdsT-1) o software similar
 
 ### Desarrollo de la interfaz web
 - ✅ Uso de Bootstrap modificado a través de Sass
-- ✅ Al menos tres páginas
 - ✅ Una página con formulario con validación de Bootstrap
 - ✅ Interacción con librerías JavaScript / JQuery
 
@@ -29,5 +28,5 @@
 - ✅ Trabajo con git/Github durante el desarrollo
 - ✅ Despliegue final en un servicio tipo Netlify
 - ✅ Entrega de enlaces:
-  - 🔗 Web desplegada
+  - 🔗 [Web desplegada](https://iesruizincidencias.netlify.app/build/login.html)
   - 🔗 Repositorio en GitHub
